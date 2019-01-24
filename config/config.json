@@ -1,0 +1,20 @@
+{
+  "authToken": "",
+  "appId": "",
+  "baseUrl": "https://api.sendbird.com/v3",
+  "limit": "?limit=100",
+  "baseGroupChatUrl": "sendbird_group_channel_",
+  "allMembers": "all_members",
+  "playerOneBaseUrl": "",
+  "auth": {
+    "Api-Token": ""
+  },
+  "db-config": {
+    "dbName": "",
+    "login": "",
+    "password": "",
+    "hostOffice": "",
+    "hostAws": "",
+    "port": 3307
+  }
+}

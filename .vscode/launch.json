@@ -1,0 +1,40 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch as Server[Debug Mode]",
+      "type": "node",
+      "protocol": "inspector",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "program": "${workspaceFolder}/server.js",
+      "args": [ "webpack -p" ],
+      "outFiles": ["${workspaceFolder}/build/liveChat.SendBird.js"]
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Chrome Debugger",
+      "port": 9222,
+      "url": "http://localhost:9001/",
+      "webRoot": "${workspaceRoot}",
+      "sourceMaps": true,
+      "timeout": 15000,
+      "trace":true
+    },
+    {
+      "name": "debug test",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceRoot}",
+      "program": "${workspaceRoot}/server.js",
+      "outFiles": [
+        "${workspaceRoot}/build/liveChat.SendBird.js"
+      ],
+      "sourceMaps": true
+    }
+  ]
+}

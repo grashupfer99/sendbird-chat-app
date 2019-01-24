@@ -1,0 +1,18 @@
+doctype html
+html(lang="ko")
+    head
+        include includes/head.pug
+    body
+      div.sendbird-container
+        div.sendbird-app#sb_chat
+
+      script(src="/static/SendBird.min.js")
+      script(src="/build/liveChat.SendBird.js")
+      script.
+        appId="#{data.appId}"
+        userId="#{data.pid}"
+        nickname="#{data.pid}"
+        channelUrl="#{data.tid}"
+        liveChat.startWithConnect(appId, userId, nickname, function() {
+          liveChat.enterChannel(channelUrl)
+        }) 

@@ -1,0 +1,36 @@
+// Icons
+$icon-prefix:     'https://dxstmhyqfqr1o.cloudfront.net/liveChat/';
+
+$icon-send-btn:   'btn-send.svg';
+
+@mixin icon($name) {
+  background-image: url($icon-prefix + $name);
+  background-position: center;
+  background-size: 19px 19px;
+  background-repeat: no-repeat;
+}
+
+.app-content::-webkit-scrollbar {
+  width: 10px;
+  background-color: #535050;
+}
+
+.app-content::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid #4e4e4e;
+}
+
+.app-content::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(left, #fff, #e4e4e4);
+  border: 1px solid rgb(109, 107, 107);
+}
+
+.app-content::-webkit-scrollbar-thumb:hover {
+  background: #adaaaa;
+}
+
+.app-content::-webkit-scrollbar-thumb:active {
+  background: linear-gradient(left, #22add4, #1e98ba);
+}
